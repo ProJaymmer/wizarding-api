@@ -1,20 +1,21 @@
-require('dotenv').config();
+// EXPRESS SERVER SETUP
 const express = require('express');
-const morgan = require('morgan');
-const cors = require('cors');
+require('dotenv').config();
 const app = express();
 
-PORT = process.env.PORT;
+const morgan = require('morgan');
+const cors = require('cors');
 
 app.use(
 	cors({
 		credentials: true,
 	})
 );
+app.use(morgan('combined'));
 
+// POSTMAN SETUP
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
 	res.json({
@@ -23,8 +24,11 @@ app.get('/', (req, res) => {
 	});
 });
 
-app.set('port', process.env.PORT || 8080);
+// IMPORT CONTROLLERS
 
+// PORT STUFF
+PORT = process.env.PORT;
+app.set('port', process.env.PORT || 8080);
 app.listen(app.get('port'), () => {
 	console.log(`✅ PORT: ${app.get('port')} 🌟`);
 });

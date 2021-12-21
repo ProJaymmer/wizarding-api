@@ -1,18 +1,18 @@
-// import express
+// IMPORT EXPRESS
 const express = require('express');
-// instantiate a new instance of express.Router
+// INSTANTIATE A NEW INSTANCE OF express.Router
 const router = express.Router();
-// import the 'school' model
+// IMPORT THE 'SCHOOL' MODEL
 // const school = require('../db/seedData.json');
 const School = require('../models/fruit');
 
-// index - returns all things
+// INDEX - RETURNS ALL SCHOOLS
 router.get('/', (req, res) => {
-	Fruit.find({})
-		.then((allFruits) => {
+	School.find({})
+		.then((allSchools) => {
 			res.json({
 				status: 200,
-				fruits: allFruits,
+				fruits: allSchools,
 			});
 		})
 		.catch((err) => {
