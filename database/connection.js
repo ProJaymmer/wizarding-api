@@ -6,8 +6,9 @@ let mongoURI = '';
 if (process.env.NODE_ENV === 'production') {
 	mongoURI = process.env.DB_URL;
 } else {
-	// mongoURI = 'mongodb://localhost/dogApp';
-	mongoURI = 'mongodb://127.0.0.1:27017';
+	// THIS CODE REFERENCES A LOCAL DATABASE AND CREATES IT IF IT DOESN'T EXIST
+	mongoURI = 'mongodb://127.0.0.1:27017/schools';
+	// mongoURI = 'mongodb://localhost/schools';
 }
 
 mongoose.connect(

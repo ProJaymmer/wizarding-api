@@ -25,6 +25,8 @@ app.get('/', (req, res) => {
 });
 
 // IMPORT CONTROLLERS
+const schoolController = require('./controllers/school.js');
+app.use('/schools', schoolController);
 
 // PORT STUFF
 PORT = process.env.PORT;
