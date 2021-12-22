@@ -4,6 +4,7 @@ require('dotenv').config();
 // CONNECT TO MONGO DB IN YOUR LOCAL DATABASE
 const mongoose = require('mongoose');
 
+// DB_URL IS SECURELY DEFINED IN .ENV FILE
 let mongoURI = process.env.DB_URL;
 // 'mongodb+srv://admin:admin@wizardschoolscluster.jvwqc.mongodb.net/WizardingSchoolsDatabase?retryWrites=true&w=majority';
 
