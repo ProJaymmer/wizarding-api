@@ -12,3 +12,9 @@ My inspiration actually came from an earlier in-class lab where we architected a
 
 - React
 - Express
+
+### CHALLENGES
+
+1. Getting my remote database (MongoDB Atlas) to connect.
+2. Getting my connection.js file to seed data properly:
+     The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
