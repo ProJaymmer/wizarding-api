@@ -1,3 +1,5 @@
+// MONGODB ATLAS USERNAME = admin, PASSWORD = admin
+
 // CONNECT TO MONGO DB IN YOUR LOCAL DATABASE
 const mongoose = require('mongoose');
 
@@ -15,9 +17,13 @@ mongoose.connect(
 	mongoURI,
 	{ useNewUrlParser: true },
 	{ useUnifiedTopology: true },
-	() => {
-		console.log('MongoDB Connected as Local Database');
-	}
+	// () => {
+	// 	console.log('MongoDB Connected as Local Database');
+	// }
 );
+
+mongoose.connection.on('connected', () => {
+	console.log('Mongoose is connected!');
+})
 
 module.exports = mongoose;
