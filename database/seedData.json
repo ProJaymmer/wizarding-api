@@ -2,36 +2,43 @@
     {
         "headmaster": "Albus Dumbledore",
         "name": "Hogwarts School of Witchcraft and Wizardry",
-        "location": "Highlands, Scotland"
+        "location": "Highlands, Scotland",
+        "reviews": "This school rules."
     },
     {
         "headmaster": "Olympe Maxime",
         "name": "Beauxbatons Academy of Magic",
-        "location": "Pyrenees, France"
+        "location": "Pyrenees, France",
+        "reviews": "This school sucks."
     },
     {
         "headmaster": "Igor Karkaroff",
         "name": "Durmstrang Institute",
-        "location": "Scandinavia"
+        "location": "Scandinavia",
+        "reviews": "This school RULES."
     },
     {
         "headmaster": "Agilbert Fontaine",
         "name": "Ilvermorny School of Witchcraft and Wizardry",
-        "location": "Mount Greylock, United States of America"
+        "location": "Mount Greylock, United States of America",
+        "reviews": "THIS SCHOOL SUCKS"
     },
     {
         "headmaster": "Dai Ryusaki",
         "name": "Mahoutokoro",
-        "location": "Minami Iwo Jima, Japan"
+        "location": "Minami Iwo Jima, Japan",
+        "reviews": "Shoes"
     },
     {
         "headmaster": "TEST1",
         "name": "TEST1",
-        "location": "TEST1"
+        "location": "TEST1",
+        "reviews": "Shoes"
     },
     {
         "headmaster": "TEST2",
         "name": "TEST2",
-        "location": "TEST2"
+        "location": "TEST2",
+        "reviews": "Shoes"
     }
 ]
