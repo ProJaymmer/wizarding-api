@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
 	});
 });
 
-// DELETE - REMOVES SCHOOL
+// DELETE - REMOVES A SINGLE SCHOOL
 router.delete('/:id', (req, res) => {
 	School.findByIdAndDelete(req.params.id).then((fruit) => {
 		res.json({
@@ -49,7 +49,7 @@ router.delete('/:id', (req, res) => {
 	});
 });
 
-// put - update a single thing
+// UPDATE - UPDATES A SINGLE SCHOOL
 router.put('/:id', (req, res) => {
 	console.log(req.params.id);
 	Fruit.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
@@ -63,5 +63,5 @@ router.put('/:id', (req, res) => {
 	);
 });
 
-// export router
+// EXPORT ROUTER
 module.exports = router;

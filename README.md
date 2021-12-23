@@ -15,8 +15,9 @@ My inspiration actually came from an earlier in-class lab where we architected a
 
 ### CHALLENGES
 
-1. Getting my remote database (MongoDB Atlas) to connect.
-2. Getting my connection.js file to seed data properly:
+1. RE-learning Express and Mongoose!! WTH IS THIS?!
+2. Getting my remote database (MongoDB Atlas) to connect.
+3. Getting my connection.js file to seed data properly:
    The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 
    SOLUTION: You must import require('dotenv').config(); in order for the dotenv reference (as the first argument of mongoose.connect) to reconfigure as a string.
