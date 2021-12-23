@@ -41,10 +41,10 @@ router.post('/', (req, res) => {
 
 // DELETE - REMOVES A SINGLE SCHOOL
 router.delete('/:id', (req, res) => {
-	School.findByIdAndDelete(req.params.id).then((fruit) => {
+	School.findByIdAndDelete(req.params.id).then((school) => {
 		res.json({
 			status: 200,
-			fruit: fruit,
+			school: school,
 		});
 	});
 });
@@ -52,12 +52,12 @@ router.delete('/:id', (req, res) => {
 // UPDATE - UPDATES A SINGLE SCHOOL
 router.put('/:id', (req, res) => {
 	console.log(req.params.id);
-	Fruit.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
-		(fruit) => {
+	School.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
+		(school) => {
 			res.json({
 				status: 200,
-				msg: 'item update',
-				fruit: fruit,
+				msg: 'Wizarding School Updated',
+				school: school,
 			});
 		}
 	);
